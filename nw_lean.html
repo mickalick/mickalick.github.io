@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46609022-1');
+    </script>
+    <meta charset="utf-8">
+    <title>Lean AM Assistant</title>
+    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="stylesheet" href="workStyle.css?v=1">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('body').css('display', 'none');
+                $('body').fadeIn(750);
+
+                $('.link').click(function() {
+                    event.preventDefault();
+                    newLocation = this.href;
+
+                    $('body').fadeOut(1000, newpage);
+                });
+                function newpage() {
+                    window.location = newLocation;
+                }
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 650, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+                $(function() {
+                    var header = $("header");
+
+                    $(window).scroll(function() {    
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 50) {
+                            header.addClass("scrolled");
+                        } else {
+                            header.removeClass("scrolled");
+                        }
+                    }); 
+                });
+            });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body class="workPage">
+    <header>
+        <nav>
+            <a class="logo" href="/"></a>
+            <ul id="homeNav">
+                <li class="navItem"><a class="navLink" href="mva.html">Next</a></li>
+                <li class="navItem"><a class="navLink" href="ads_pwr.html">Previous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <section id="lean" class="workBanner main">
+        </section>
+
+        <section class="overview main">
+            <div class="flex_2col">
+                <div class="flex_2col_main">
+                    <h1>Lean AM Assistant</h1>
+                    <h3>Android & iOS App Design</h3>
+                    <p>In the spring of 2015, the Enterprise Applications IT department at Nationwide Insurance began an initiative to adopt <a href="https://leankit.com/learn/lean/lean-agile/">Lean Methodology</a> into our current Agile practices. This included the somewhat tedious idea of feedback loops, where team members would keep track of what they worked on every 15 minutes in an effort to identify and eliminate waste. I was working on Nationwide's mobile app team at the time, and we scoffed at the idea of managing these feedback loops on paper work sheets. So we created an app for that.</p>
+                    <p>Though I was only a Requirements Analyst on the team, the developers trusted me with designing the entire UX and UI for the app. They even helped me learn the basics of application development in Android Studio, though I can't take much coding credit for the final build.</p>
+                </div>
+                <div class="flex_2col_side">
+                    <h4>Company</h4>
+                    <p>Nationwide Insurance</p>
+                    <h4>Project Timeframe</h4>
+                    <p>May - June 2015</p>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                        <li>Android App Design</li>
+                        <li>iOS App Design</li>
+                        <li>Android Development</li>
+                    </ul>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Android Studio</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main flex_2col reverseFlex">
+                <div class="flex_2col_half">
+                    <a href="images/lean/create_clockin.gif"><img class="workImage leanGif" src="images/lean/create_clockin.gif" alt="Lean 1" /></a>
+                </div>
+                <div class="flex_2col_half">
+                    <h2 align="center">Profile Creation & Clocking In</h2>
+                    <p>Upon opening the application for the first time, the user is asked to create their profile. Their profile details are included in the log file that is automatically sent to agile managers at the end of each work day. Once the profile is created, the user needs to "clock in" to start tracking their tasks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main flex_2col">
+                <div class="flex_2col_half">
+                    <h2 align="center">Time Log</h2>
+                    <p>After clocking in, the user sees a display of "time cards" in 15 minute increments, separated by hour of the day. Once an entry is "past due", the corresponding card is displayed in red. If an entry is completed, the card is changed to green with a checkmark displayed. To prevent cluttering, cards from the previous hour are automatically moved to the "Previous Times" tab, which can be opened and edited if needed.</p>
+                </div>
+                <div class="flex_2col_half">
+                    <a href="images/lean/timelog.gif"><img class="workImage leanGif" src="images/lean/timelog.gif" alt="Lean 3" /></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main flex_2col reverseFlex">
+                <div class="flex_2col_half">
+                    <a href="images/lean/tasks.gif"><img class="workImage leanGif" src="images/lean/tasks.gif" alt="Lean 4" /></a>
+                </div>
+                <div class="flex_2col_half">
+                    <h2 align="center">Adding Tasks</h2>
+                    <p>Tapping on a time card brings up the interface for adding tasks. With the large number of possible tasks, logical categories were created to help ease the cognitive load of finding and adding tasks. Selecting a category causes it to expand with a list of tasks to choose from. Once a task is "checked", the corresponding category indicates the selection with a color change. After selecting all appropriate tasks, the user selects save in the top right corner to go back to the time log screen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main flex_2col">
+                <div class="flex_2col_half">
+                    <h2 align="center">Menu & Clocking Out</h2>
+                    <p>Included in the applications menu is an option to edit their profile information, app settings, and a secondary location for clocking in and out. After the user's work day is over and they've completed all necessary time cards, all they have left to do is clock out. By clocking out, all app notifications are turned off and a log of their task entries is sent to their agile manager automatically.</p>
+                </div>
+                <div class="flex_2col_half">
+                    <a href="images/lean/clockout.gif"><img class="workImage leanGif" src="images/lean/clockout.gif" alt="Lean 5" /></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">iOS Screens</h2>
+                
+                <p>Though I'm an Android user, I try not to play favorites. An iOS version of the app was also designed and developed, with tweaks to the UI that better match iOS design guidelines. Some changes include replacing the clock in/out FAB with top right CTA, adding a tab bar in place of the hamburger menu, and using a toggle for displaying current times vs previous times.</p>
+                <a href="images/lean/ios1.png"><img class="workImage" src="images/lean/ios1.png" alt="Lean 6" /></a>
+                <a href="images/lean/ios2.png"><img class="workImage" src="images/lean/ios2.png" alt="Lean 6" /></a>
+            </div>
+        </section>
+
+        <div class="push altBackground"></div>
+
+    </div>
+
+    <footer>
+        <div class="foot-wrap altBackground">
+            <small>&copy; 2020 Kevin Mihalich. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

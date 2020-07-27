@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46609022-1');
+    </script>
+    <meta charset="utf-8">
+    <title>Password Reset Redesign</title>
+    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="stylesheet" href="workStyle.css?v=1">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('body').css('display', 'none');
+                $('body').fadeIn(750);
+
+                $('.link').click(function() {
+                    event.preventDefault();
+                    newLocation = this.href;
+
+                    $('body').fadeOut(1000, newpage);
+                });
+                function newpage() {
+                    window.location = newLocation;
+                }
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 650, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+                $(function() {
+                    var header = $("header");
+
+                    $(window).scroll(function() {    
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 50) {
+                            header.addClass("scrolled");
+                        } else {
+                            header.removeClass("scrolled");
+                        }
+                    }); 
+                });
+            });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body class="workPage">
+    <header>
+        <nav>
+            <a class="logo" href="/"></a>
+            <ul id="homeNav">
+                <li class="navItem"><a class="navLink" href="nw_lean.html">Next</a></li>
+                <li class="navItem"><a class="navLink" href="ads_sc.html">Previous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <section id="passwordreset" class="workBanner main">
+        </section>
+
+        <section class="overview main">
+            <div class="flex_2col">
+                <div class="flex_2col_main">
+                    <h1>Redesigning Password Reset</h1>
+                    <h3>UX Design Case Study</h3>
+                    <p>During my time at Alliance Data, I've mainly supported the UX design of <a href="https://d.comenity.net/victoriassecret/" target="_blank">Account Center</a>. When I joined the company in September 2015, the platform was in the middle of a large scale redesign, and I was privileged to lead the UX effort on one of its largest pain points: Password Reset.</p>
+                    <p>As part of four focus groups conducted in Alliance Data Call Centers, associates were asked to identify the top 10 Account Center issues they received calls about. In all four groups, password reset was ranked the top issue, making this particular redesign a high priority.</p>
+                </div>
+                <div class="flex_2col_side">
+                    <h4>Company</h4>
+                    <p>Alliance Data Card Services</p>
+                    <h4>Project Timeframe</h4>
+                    <p>Dec 2015 - Apr 2016</p>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                        <li>UX Project Lead</li>
+                        <li>Wireframing</li>
+                        <li>High Fidelity Design</li>
+                        <li>Prototyping</li>
+                        <li>User Testing</li>
+                        <li>Specification Document</li>
+                    </ul>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Axure</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">The Challenge</h2>
+                <p>Password reset on Account Center was not only outdated, but also ineffective. Users were constantly getting confused by the multi-stepped process, leading to high abandonment rates and call center volume.</p>
+                <p class="workLabel center">Card Sort results from Call Center Focus Groups</p>
+                <a href="images/passwordReset/cardsort.png"><img class="workImage" src="images/passwordReset/cardsort.png" alt="PWR 2" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">User Flows</h2>
+                <p>Following competitive market research, I created scenario flows for all of the possible steps and actions a user needs to take to reset their password. These also included scenarios for the "Out of Band" process (i.e. user needs to confirm their identity due to a new sign-in device), as the two processes have a lot of overlap.</p>
+                <p class="workLabel center">Password Reset Flows</p>
+                <a href="images/passwordReset/passwordResetFlow.png"><img class="workImage" src="images/passwordReset/passwordResetFlow.png" alt="PWR 3" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Ideation & Mockups</h2>
+                <p>With a better understanding of the process, I began ideating on possible solutions. After some solo whiteboarding sessions, I brought my ideas to the larger UX group for further brainstorming. Together we got to a place where I was comfortable moving forward to digital wireframes and mockups.</p>
+                <p class="workLabel center">An Early Low Fidelity Mock Up for Password Reset</p>
+                <a href="images/passwordReset/mock.png"><img class="workImage" src="images/passwordReset/mock.png" alt="PWR 6" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Prototyping & Usability Testing</h2>
+                <p>I was feeling pretty good with how this new design was turning out, so it was time to put it to the test. I created a functioning, clickable prototype of the experience and had four users try it out. The first round of tests didn't go so well. I identified that our users were mostly getting confused around the request ID code step. The options weren't presented clearly enough, and if the code didn't arrive immediately they were unsure of what to do. Users also found it somewhat disorienting that each step was on a new page, with no clear indication of previous actions they took.</p>
+                <p>My solutions to these issues were to (1) add a "safety net" step where the user chooses if they received their code, and (2) keep the entire reset password process on one page. For the second solution I thought it was important to hide any steps the user wasn't ready to see yet. Once ready the page would pleasantly scroll to the next task, creating a trail for the user to review if needed.</p>
+                <p>I tested the updated design again with three different users and one from the previous round of testing. To my delight, the users were 100% successful in completing all tasks, and the feedback we received was nothing but positive.</p>
+                <p class="workLabel center">Click to View the Working Prototype</p>
+                <a href="work/passwordreset_spec/start.html#g=1&p=password_reset" target="_blank"><img class="workImage" src="images/passwordReset/prototype.png" alt="PWR 7" /></a>
+                <p class="workLabel center">Usability Testing</p>
+                <video class="workImage" controls>
+                    <source src="images/passwordReset/usability.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Specifications & Documentation</h2>
+                <p>With the design now in a good place, it was time to document it. This was one of the first projects to utilize our new digital (i.e. html) UX specifications, a now standard practice that I pioneered on the team. To this point our specifications were just a simple PDF document, but with the complexity of this project and the newly added animations, a PDF was not going to suffice.</p>
+                <p class="workLabel center">The new html specification document helped portray micro-interactions in the experience and made sorting through requirements much easier.</p>
+                <a href="images/passwordReset/specs.png" target="_blank"><img class="workImage" src="images/passwordReset/specs.png" alt="PWR 8" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Launch</h2>
+                <p>The redesigned Password Reset process was launched in April 2016 to great results. A second round of Call Center focus groups were conducted in May 2017, one year after the redesign went live. The same card sorting exercise was performed that previously had "Password Reset" as the top issue across the board. This time though, it didn't crack the top 10 for all of the groups surveyed. That alone makes this the project I'm most proud of in my career.</p>
+            </div>
+        </section>
+
+        <div class="push"></div>
+
+    </div>
+
+    <footer>
+        <div class="foot-wrap">
+            <small>&copy; 2020 Kevin Mihalich. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+﻿body {
+  margin:0px;
+  background-color:rgba(242, 242, 242, 1);
+  background-image:none;
+  position:relative;
+  left:-0px;
+  width:579px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u3033_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:579px;
+  height:444px;
+}
+#u3033 {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:579px;
+  height:444px;
+}
+#u3034 {
+  border-width:0px;
+  position:absolute;
+  left:2px;
+  top:214px;
+  width:575px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u3035_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:550px;
+  height:434px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  box-sizing:border-box;
+  border-width:3px;
+  border-style:solid;
+  border-color:rgba(0, 157, 217, 1);
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+#u3035 {
+  border-width:0px;
+  position:absolute;
+  left:10px;
+  top:10px;
+  width:550px;
+  height:434px;
+}
+#u3036 {
+  border-width:0px;
+  position:absolute;
+  left:2px;
+  top:209px;
+  width:546px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u3035_ann {
+  border-width:0px;
+  position:absolute;
+  left:553px;
+  top:6px;
+  width:1px;
+  height:1px;
+}
+#u3037_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:150px;
+  height:23px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  box-sizing:border-box;
+  border-width:3px;
+  border-style:solid;
+  border-color:rgba(0, 157, 217, 1);
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+#u3037 {
+  border-width:0px;
+  position:absolute;
+  left:50px;
+  top:336px;
+  width:150px;
+  height:23px;
+}
+#u3038 {
+  border-width:0px;
+  position:absolute;
+  left:2px;
+  top:4px;
+  width:146px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u3037_ann {
+  border-width:0px;
+  position:absolute;
+  left:193px;
+  top:332px;
+  width:1px;
+  height:1px;
+}

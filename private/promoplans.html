@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46609022-1');
+    </script>
+    <meta charset="utf-8">
+    <title>Promotional Plans</title>
+    <link rel="stylesheet" href="../style.css?v=1">
+    <link rel="stylesheet" href="../workStyle.css?v=1">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('body').css('display', 'none');
+                $('body').fadeIn(750);
+
+                $('.link').click(function() {
+                    event.preventDefault();
+                    newLocation = this.href;
+
+                    $('body').fadeOut(1000, newpage);
+                });
+                function newpage() {
+                    window.location = newLocation;
+                }
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 650, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+                $(function() {
+                    var header = $("header");
+
+                    $(window).scroll(function() {    
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 50) {
+                            header.addClass("scrolled");
+                        } else {
+                            header.removeClass("scrolled");
+                        }
+                    }); 
+                });
+            });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body class="workPage">
+    <header>
+        <nav>
+            <a class="logo" href="/"></a>
+            <ul id="homeNav">
+                <li class="navItem"><a class="navLink" href="granular.html">Next</a></li>
+                <li class="navItem"><a class="navLink" href="../mva.html">Previous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <section id="promoplans" class="workBanner main">
+        </section>
+
+        <section class="overview main">
+            <div class="flex_2col">
+                <div class="flex_2col_main">
+                    <h1>Promotional Plans</h1>
+                    <h3>UX Design Case Study</h3>
+                    <p>Promotional Plans are special financing offers that allow customers to pay for large purchases over time, often with low or no interest for a certain period of time.  Despite offering these types of plans for many years, the Account Center platform has never supported showing plan information, leading to a lot of customer confusion and calls to our care centers. Recently a project was finally created to show plan information on our site, and I was excited to lead UX design efforts on such a customer-centric feature.</p>
+                </div>
+                <div class="flex_2col_side">
+                    <h4>Company</h4>
+                    <p>Alliance Data Card Services</p>
+                    <h4>Project Timeframe</h4>
+                    <p>Dec 2018 - May 2019</p>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                        <li>UX Project Lead</li>
+                        <li>Competitive Research</li>
+                        <li>User Research & Scenarios</li>
+                        <li>Wireframing</li>
+                        <li>High Fidelity Design</li>
+                        <li>Prototyping</li>
+                        <li>Moderated User Testing</li>
+                        <li>Specification Document</li>
+                    </ul>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Axure</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">The Challenge</h2>
+                <p>Customers are often confused about how much they owe on a plan, when they need to pay a plan off, and how their payment is distributed across their plan and non-plan (i.e. revolving) balances on their account. This information is displayed on a customer's physical statement but is often misunderstood or overlooked completely. So the main question was: How might we educate and empower users to successfully manage their promotional plans on Account Center?</p>
+                <p class="workLabel center">Example of how promotional plans are displayed on statements</p>
+                <a href="../images/promoPlans/statement.png"><img class="workImage" src="../images/promoPlans/statement.png" alt="Screenshot of the promotional plans section on an example statement" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Understanding & Market Research</h2>
+                <p>As I wasn't very knowledgeable of how promotional plans worked, it was important to understand exactly what I would be designing. I met with various stakeholders to learn about the different types of promotional plans offered by our clients, what data points were most important to our users, and common questions and issues that came up in care center calls. From there I performed market research, looking specifically into examples from Synchrony, Citibank, and PayPal. We looked at the sites as a team and noted what we liked and didn't like about each experience to help guide design decisions later.</p>
+                <p class="workLabel center">Competitive Research</p>
+                <a href="../images/promoPlans/competitive.png"><img class="workImage" src="../images/promoPlans/competitive.png" alt="Screenshots of competitive examples and feedback from sessions" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Personas & Scenarios</h2>
+                <p>After learning about promotional plans and common issues our customers face, I found it necessary to create two personas. The first would be a user that signs up for a promotional plan as a convenience; this user doesn't necessarily need the plan to make their purchase but it helps ease the pain on their wallet. They also wouldn't need as much education on how plans work, but would benefit from having added tools to help stay on track with their payments. For this user I would use a modified version of our enterprise persona, Jane.</p>
+                <p>The second persona would be a user that depends on promotional plans to make their purchase, and needs a little more help understanding how their plan works. Due to having less financial flexibility, this user should be provided with as much information as possible around how their payments are distributed, when their plan expires, and the consequences of not paying off their plan in time.</p>
+                <p>With help from one of our care center representatives, I identified the common scenarios both personas experience over the course of paying off a plan. These scenarios were then used to help map out what areas of Account Center would need to be updated for the project.
+                <p class="workLabel center">Jane & Betty, the personas created for the project</p>
+                <a href="../images/promoPlans/personas.png"><img class="workImage" src="../images/promoPlans/personas.png" alt="Images of the Jane and Betty personas created for the project" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Brainstorming Concepts</h2>
+                <p>With an idea of who we were designing for and the areas of Account Center affected, I brought the key stakeholders together for a brainstorming session. We split into two teams and thought up various solutions to our design challenge. Following this session, I mocked up some of our favorite ideas for the group to review.</p>
+                <p class="workLabel center">Concept sketches from our brainstorm session</p>
+                <a href="../images/promoPlans/brainstorm.png"><img class="workImage" src="../images/promoPlans/brainstorm.png" alt="Images of the Jane and Betty personas created for the project" /></a>
+                <p class="workLabel center">Mockups (from left to right: Secure Homepage, Plans page concept 1, Plans page concept 2)</p>
+                <a href="../images/promoPlans/mocks.png"><img class="workImage" src="../images/promoPlans/mocks.png" alt="Images of early mockups of the secure homepage changes and plans page concepts" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Design & Prototyping</h2>
+                <p>When the team reached a consensus on concepts to move forward with, I transitioned the lower fidelity mockups into our Account Center styling. I also added complex prototyping to the experience, utilizing Axure RP's interaction builder to layer in animations, working input fields, and custom variables that would make the prototype feel like a fully working website. You can test it out <a href="https://507G45.axshare.com/">here.</a></p>
+                <p class="workLabel center">High fidelity mockups created in Axure</p>
+                <a href="../images/promoPlans/axure.png"><img class="workImage" src="../images/promoPlans/axure.png" alt="Screenshot of a Promo Plans mockup in Axure" /></a>
+                <p class="workLabel center">Click to view the desktop prototype</p>
+                <a href="https://507G45.axshare.com/"><img class="workImage" src="../images/promoPlans/prototype.png" alt="Screenshot of the desktop prototype for Promo Plans" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Usability Testing</h2>
+                <p>When it came time to test the prototype, we did things a bit differently for this project. We worked with our interal CX team and an external recruiting agency to find real cardmembers with experience using promotional plans. Over the course of two days, we brought in a total of eleven people to the Alliance Data campus to interview and run through the prototype. I personally moderated three of the tests, while working behind the scenes and taking notes for the other eight.</p>
+                <p>Through testing, we found that nearly every participant left with a positive reception of the experience. We did find some issues with how some of the plan information was displayed (particularly with the payoff bar, as seen below), as well as with content and findability. After making slight changes to the experience I tested with a second group of users remotely via UserTesting.com, finding previous issues to be resolved.
+                <p class="workLabel center">A findings document was created following usability testing, highlighting insights and quotes from participants</p>
+                <a href="../images/promoPlans/testing.png"><img class="workImage" src="../images/promoPlans/testing.png" alt="Slides from the UX Testing Insights deliverable" /></a>
+                <p class="workLabel center">Payoff bar. Before (first example) some users were confused by the bar loading in from the right, thinking it was showing payoff progress instead of a date countdown as intended. Once changed to better meet those expecations, users understood the concept of the bar immediately.</p>
+                <video class="workImage" controls autoplay loop>
+                    <source src="../images/promoPlans/progressbar.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="workItem altBackground" style="display: none;">
+            <div class="main">
+                <h2 align="center">Documentation</h2>
+                <p>need content here</p>
+                <p class="workLabel center">The annotated specification document helps clarify functionality and requirements for the development team</p>
+                <a href="../images/promoPlans/spec.png"><img class="workImage" src="../images/promoPlans/spec.png" alt="Screenshot of the spec document" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Status</h2>
+                <p>All work to this point was actually completed before the project was prioritized and scheduled for development. This was one of the first times our team performed early engagement work, meant to help the business owner narrow down their needs and get closer to prioritization. Once this initial experience was drafted, the business owner and I presented it to leadership, and the following day it was added to the development schedule for an early Q2 2020 launch.</p>
+                <p>Though I no longer work at Alliance Data, I left the project in very capable hands. You can still view my final version of the UX specification <a href="https://kywwib.axshare.com/">here.</a></p>
+                <p class="workLabel center">Click to view my final specification for Promotional Plans</p>
+                <a href="https://kywwib.axshare.com/"><img class="workImage" src="../images/promoPlans/spec.png" alt="Screenshot of the spec document" /></a>
+            </div>
+        </section>
+
+        <div class="push altBackground"></div>
+
+    </div>
+
+    <footer>
+        <div class="foot-wrap">
+            <small>&copy; 2020 Kevin Mihalich. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46609022-1');
+    </script>
+    <meta charset="utf-8">
+    <title>Granular Card Controls</title>
+    <link rel="stylesheet" href="../style.css?v=1">
+    <link rel="stylesheet" href="../workStyle.css?v=1">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('body').css('display', 'none');
+                $('body').fadeIn(750);
+
+                $('.link').click(function() {
+                    event.preventDefault();
+                    newLocation = this.href;
+
+                    $('body').fadeOut(1000, newpage);
+                });
+                function newpage() {
+                    window.location = newLocation;
+                }
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 650, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+                $(function() {
+                    var header = $("header");
+
+                    $(window).scroll(function() {    
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 50) {
+                            header.addClass("scrolled");
+                        } else {
+                            header.removeClass("scrolled");
+                        }
+                    }); 
+                });
+            });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body class="workPage">
+    <header>
+        <nav>
+            <a class="logo" href="../index.html"></a>
+            <ul id="homeNav">
+                <li class="navItem"><a class="navLink" href="../ads_sc.html">Next</a></li>
+                <li class="navItem"><a class="navLink" href="promoplans.html">Previous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <section id="granular" class="workBanner main">
+        </section>
+
+        <section class="overview main">
+            <div class="flex_2col">
+                <div class="flex_2col_main">
+                    <h1>Granular Card Controls</h1>
+                    <h3>UX Design Case Study</h3>
+                    <p>Card Controls was a two-phased project for the Account Center platform at Alliance Data. Our goal was to give customers advanced security options for their account, allowing them to control when, where, and how their credit card is used. Phase one focused on adding simple lock/unlock functionality to their account, while phase two was to allow more granular control of their spending. I was the UX lead for both phases of the project.</p>
+                </div>
+                <div class="flex_2col_side">
+                    <h4>Company</h4>
+                    <p>Alliance Data Card Services</p>
+                    <h4>Project Timeframe</h4>
+                    <p>Jun - Nov 2018</p>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                        <li>UX Project Lead</li>
+                        <li>User/IA Research</li>
+                        <li>User Scenarios</li>
+                        <li>Wireframing</li>
+                        <li>High Fidelity Design</li>
+                        <li>Prototyping</li>
+                        <li>User Testing</li>
+                        <li>Specification Document</li>
+                    </ul>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Axure</li>
+                        <li>Invision</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">The Challenge</h2>
+                <p>Granular card controls allows users to receive alerts or automatically decline purchases based on factors such as the purchase type, amount, or location. Compared to the lock/unlock functionality from phase 1, granular card controls is much less commonplace in the industry, giving us an opportunity to design a cutting-edge experience and become a leader in credit card security.</p>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Research</h2>
+                <p>When designing a feature around credit card security, it's crucial to understand the type of mindset or situations our users might be in when using it. Based on our enterprise persona "Jane", I brainstormed the possible scenarios where she would utilize these granular card controls and created flows of her journey.</p>
+                <p>Additionally, I worked with our team's IA specialist to understand where our users might look for this kind of functionality in the existing Account Center navigation. We created both a tree test and card sort exercise for use with usertesting.com, helping us determine that a new nav item was needed for this functionality.</p>
+                <p class="workLabel center">User Scenario Flows</p>
+                <a href="../images/granular/scenarios.png"><img class="workImage" src="../images/granular/scenarios.png" alt="Scenario flows created for the spend limit granular control" /></a>
+                <p class="workLabel center">Card Sorting Results</p>
+                <a href="../images/granular/cardSort.png"><img class="workImage" src="../images/granular/cardSort.png" alt="Card sort test results" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Brainstorming Concepts</h2>
+                <p>After our research and scenarios, we were ready to begin ideating on conceptual solutions. The UX team along with key project stakeholders came together in group design thinking exercises, where we brainstormed and sketched out ideas. I took our favorite ideas and created low-fidelity sketches, taking the ideas a little further than what we could get to in our session.</p>
+                <p class="workLabel center">Whiteboard concepts from brainstorming sessions</p>
+                <a href="../images/granular/whiteboard.png"><img class="workImage" src="../images/granular/whiteboard.png" alt="Photo of whiteboard sketches from brainstorming sessions" /></a>
+                <p class="workLabel center">Low-fi sketches of brainstormed concepts</p>
+                <a href="../images/granular/sketches.png"><img class="workImage" src="../images/granular/sketches.png" alt="Screenshot of low fidelity sketches created from concepts" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Design & Prototyping</h2>
+                <p>Following concept approval from stakeholders, I created high fidelity mockups and a prototype of the experience using Axure RP. It was important for me to properly illustrate the various new UI interactions involved with this feature, not only to benefit stakeholders and developers, but to also ensure appropriate feedback when conducting usability tests.</p>
+                <p class="workLabel center">High fidelity mockups created in Axure</p>
+                <a href="../images/granular/axure.png"><img class="workImage" src="../images/granular/axure.png" alt="Screenshot of a granular control mockup in Axure" /></a>
+                <p class="workLabel center">Click to view the desktop prototype</p>
+                <a href="https://yw1wu2.axshare.com/"><img class="workImage" src="../images/granular/prototype.png" alt="Screenshot of the desktop prototype for granular card controls" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Usability Testing</h2>
+                <p>With both mobile and desktop prototypes created, I began working with stakeholders on a test plan. Given that this would be the first time many users would experience this kind of security feature, we had a lot of questions to answer. With UserTesting.com, I distributed a total of 14 tests (8 desktop, 6 mobile) for participants to record and complete remotely. In the test, I gave users a scenario in which they want to either block or be alerted for certain types of purchases, for both themselves and an authorized buyer on their account. The test also included some free form questions to help indicate if the user understood what the feature was and how it worked.</p>
+                <p>Overall, the test results were extremely positive. All participants were successful in setting up the different granular controls, and all but one accurately described what the feature was and how it worked. The test did bring to light some issues with category naming and CTA placement, but these were easily fixed thanks to the great feedback from test participants.</p>
+                <p class="workLabel center">14 UserTesting.com participants tested both my desktop and mobile prototypes</p>
+                <a href="../images/granular/testing.png"><img class="workImage" src="../images/granular/testing.png" alt="Screenshot of a UserTesting.com test review" /></a>
+                <p class="workLabel center">Click to review the full test results</p>
+                <a href="../work/granular_testResults.pdf"><img class="workImage" src="../images/granular/testResults.png" alt="Preview of the Test Results Deliverable" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Documentation</h2>
+                <p>Following testing, I created a specification document that detailed the nuances of the experience for the development team. Due to the new feature's complexity and range of touchpoints across Account Center, this ended up being one of the largest spec documents I've ever had to put together.</a></p>
+                <p class="workLabel center">The annotated specification document helps clarify functionality and requirements for the development team</p>
+                <a href="../images/granular/spec.png"><img class="workImage" src="../images/granular/spec.png" alt="Screenshot of the spec document" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Status</h2>
+                <p>Granular Card Controls was originally set to go live by April 2019, but issues found during phase one of development have pushed the release back to Q1 2020. Though I am no longer with the company, I'm more than confident in the team there to see it through to launch.</p>
+            </div>
+        </section>
+
+        <div class="push altBackground"></div>
+
+    </div>
+
+    <footer>
+        <div class="foot-wrap altBackground">
+            <small>&copy; 2020 Kevin Mihalich. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

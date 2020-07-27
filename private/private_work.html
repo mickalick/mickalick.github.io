@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lean AM Assistant</title>
+    <link rel="stylesheet" href="../style.css?v=1">
+    <link rel="stylesheet" href="../workStyle.css?v=1">
+    <!-- <link rel="stylesheet" href="navigataur.css"> -->
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/newfavicon.png">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('body').css('display', 'none');
+            $('body').fadeIn(750);
+
+            $('.link').click(function() {
+                event.preventDefault();
+                newLocation = this.href;
+
+                $('body').fadeOut(1000, newpage);
+            });
+            function newpage() {
+                window.location = newLocation;
+            }
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    //event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 650, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://use.typekit.net/xrt3iez.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body id="workPage">
+
+    <div class="wrapper">
+
+        <div id="privateWork">
+                <section class="main">
+                    <h1><em>Private/In Progress Portfolio</em></h1>
+                    <p>This is for my projects that are private either due to company/client restrictions or are not ready for public release.</p>
+                    <ul class="grid cs-style-3">
+                        <li><figure><a href="ads_sc.html"><img src="../images/portfolio-sc.jpg"><figcaption><h4>ADS Card Controls</h4></a></figcaption></figure></li>
+                        <li><figure><a href="ads_pwr.html"><img src="../images/portfolio-pwr.jpg"><figcaption><h4>ADS Promotional Plans</h4></a></figcaption></figure></li>
+                        <li><figure><a href="nw_lean.html"><img src="../images/portfolio-lean.jpg"><figcaption><h4>ADS Chatbot</h4></a></figcaption></figure></li>
+                        <li class="empty"><figure><h2><em>More Coming Soon</em></h2><img></figure></li>
+                    </ul>
+                </section>
+            </div>
+
+        <div class="push"></div>
+
+    </div>
+
+    <footer>
+        <section class="foot-wrap">
+            <a href="../index.html#work"><h4>Back to Home</h4></a>
+            <small>&copy; 2019 Kevin Mihalich. All rights reserved.</small>
+        </section>
+    </footer>
+
+</body>
+</html>
