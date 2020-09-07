@@ -23,8 +23,10 @@
 }
 
 #sherwin{
-	background:url(images/sw_banner.jpg) no-repeat #27ae90;
-	background-size: cover;
+	background: url(images/sw_banner.jpg) no-repeat #27ae90;
+    background-size: cover;
+    box-shadow: none;
+    background-position-y: center;
 }
 
 #selectcheckout{
