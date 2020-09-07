@@ -22,6 +22,11 @@
 	background-size: cover;
 }
 
+#sherwin{
+	background:url(images/sw_banner.jpg) no-repeat #27ae90;
+	background-size: cover;
+}
+
 #selectcheckout{
 	background:url(images/selectcheckout.jpg) no-repeat #27ae90;
 	background-size: cover;
