@@ -31,19 +31,19 @@
                 function newpage() {
                     window.location = newLocation;
                 }
-                $("a").on('click', function(event) {
-                    if (this.hash !== "") {
-                        event.preventDefault();
+                // $("a").on('click', function(event) {
+                //     if (this.hash !== "") {
+                //         event.preventDefault();
 
-                        var hash = this.hash;
+                //         var hash = this.hash;
 
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 650, function(){
-                            window.location.hash = hash;
-                        });
-                    }
-                });
+                //         $('html, body').animate({
+                //             scrollTop: $(hash).offset().top
+                //         }, 650, function(){
+                //             window.location.hash = hash;
+                //         });
+                //     }
+                // });
                 $(function() {
                     var header = $("header");
 
