@@ -29,6 +29,13 @@
     background-position: center;
 }
 
+#huntington{
+	background: url(images/hnb_banner.jpg) no-repeat #27ae90;
+    background-size: cover;
+    box-shadow: none;
+    background-position: center;
+}
+
 #selectcheckout{
 	background:url(images/selectcheckout.jpg) no-repeat #27ae90;
 	background-size: cover;
@@ -134,7 +141,7 @@ footer a{
 }
 
 .flex_2col_main h1 {
-	color: #15A284;
+	color: #7f4c8c;
 }
 
 
