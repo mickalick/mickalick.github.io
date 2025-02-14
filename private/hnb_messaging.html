@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46609022-1');
+    </script>
+    <meta charset="utf-8">
+    <title>In-App Messaging</title>
+    <link rel="stylesheet" href="../style.css?v=1">
+    <link rel="stylesheet" href="../workStyle.css?v=1">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('body').css('display', 'none');
+                $('body').fadeIn(750);
+
+                $('.link').click(function() {
+                    event.preventDefault();
+                    newLocation = this.href;
+
+                    $('body').fadeOut(1000, newpage);
+                });
+                function newpage() {
+                    window.location = newLocation;
+                }
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 650, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+                $(function() {
+                    var header = $("header");
+
+                    $(window).scroll(function() {    
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 50) {
+                            header.addClass("scrolled");
+                        } else {
+                            header.removeClass("scrolled");
+                        }
+                    }); 
+                });
+            });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body class="workPage">
+    <header>
+        <nav>
+            <a class="logo" href="/"></a>
+            <ul id="homeNav">
+                <li class="navItem"><a class="navLink" href="granular.html">Next</a></li>
+                <li class="navItem"><a class="navLink" href="../sw.html">Previous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <section id="huntington" class="workBanner main">
+        </section>
+
+        <section class="overview main">
+            <div class="flex_2col">
+                <div class="flex_2col_main">
+                    <h1>In-App Messaging</h1>
+                    <h3>UX Design Case Study</h3>
+                    <p>In my time working at Huntington National Bank, I was fully dedicated to the conception and launch of a new to bank application that supports the sales and onboarding of business and commercial customers, including prospective customers, to the bank. As part of this platform, a key feature defined was the need for an in-application messaging solution, as a means to help replace email communication happening between customers and Huntington colleagues today.</p>
+                    <p>As the lead interaction designer on the project, I was responsible for collaborating across multiple areas of the business, between product partners, process SMEs, architecture, and various technical teams, to design a viable solution that would meet the needs of the business and its customers alike. Here's how we did it.</p>
+                </div>
+                <div class="flex_2col_side">
+                    <h4>Company</h4>
+                    <p>Huntington National Bank</p>
+                    <h4>Project Timeframe</h4>
+                    <p>Jun 2024 - Jan 2025</p>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                        <li>UX Design Lead</li>
+                        <li>Competitive Research</li>
+                        <li>Use Cases & Scenarios</li>
+                        <li>Information Architecture</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Cross-functional Collaboration</li>
+                        <li>Unmoderated User Testing</li>
+                        <li>Specification Documentation</li>
+                    </ul>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">The Challenge</h2>
+                <p>Entering our third year of building out our digital onboarding web application, there was a big need that still wasn't being met by what had been built so far. As part of current onboarding processes, both our customers and the internal colleagues who support them were heavily reliant on email communication to exchange information and correspondence regarding their account opening or deal originations. The business was motivated to bring this kind of communication into the application itself for a few reasons; first, to allow for more secure conversations to occur; second, to help streamline internal collection and processing of information and documents exchanged; and third, to help increase adoption of the platform overall. Thus, the "In-App Messaging" feature was born.</p>
+                <p class="workLabel center">A view of the application at the start of our work</p>
+                <a href="../images/messaging/start.png"><img class="workImage" src="../images/messaging/start.png" alt="Screenshot of the lobby application before updates" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Understanding & Analysis</h2>
+                <p>By this point in the maturity of our design team, we had established a cadence of "understanding" sessions with business and product partners to help narrow our focus on the story of each upcoming feature, their goals as the business, the needs for our customers, as well as any assumptions we might be making. After dedicating the entirety of one of these sessions to this new feature, I walked away with a good grasp of what the business was imagining for this capability, and immediately set out on collecting as many examples of online messaging systems that I could find. Following this exercise, I documented the commonalities we saw across the current Huntington ecosystem, as well as with competitors and non-banking experiences alike, and came away with ideas on the many possible paths forward.</p>
+                <p class="workLabel center">We looked at messaging experiences across 20 different examples</p>
+                <a href="../images/messaging/comp.png"><img class="workImage" src="../images/messaging/comp.png" alt="Screenshot of our board of competitive examples" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Approach & Explorations</h2>
+                <p>With so many directions to choose from, it was important to get my bearings on exactly everything we wanted to be possible with this messaging solution. I started by listing out the high-level use cases and scenarios that both colleagues and customers could experience using such a solution, and validated with the business which were relevant for our first iteration, and those that could be saved for future versions. From there, I explored the various entry point and navigation models that could result from adding messaging into our existing application, and listed out the pros and cons associated with each, taking those into conversations with the business to help further align and narrow down our approach. While these conversations and decisions were in flux, I continued to explore where I could, putting together object models and concepts that fit within the parameters we had defined to that point.</p>
+                <p class="workLabel center">Defined use cases & an object element model</p>
+                <a href="../images/messaging/usecases.png"><img class="workImage" src="../images/messaging/usecases.png" alt="Screenshot of our defines use cases and an object model for messages" /></a>
+                <p class="workLabel center">We explored many different entry point models & options</p>
+                <a href="../images/messaging/entry.png"><img class="workImage" src="../images/messaging/entry.png" alt="Screenshot of entry point explorations" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Tech & Architecture Discussions</h2>
+                <p>After creating and aligning on initial concepts, we took our ideas to our technical and architecture partners to discuss feasibility and constraints. Because the backend system was powered by Salesforce, it was important to use a solution and framework that our colleagues would use and understand, while not requiring a lot of custom coding or overly intricate technical design. With their expertise and support, the team was able to align on a few possible approaches, and after thoroughly vetting each, landed on a solution using a similar framework developed for our "Tasks" area of the application. This solution would help ensure familiarity with the interface and area of Salesforce impacted, while meeting the needs and goals of what we had defined thus far.</p>
+                <p class="workLabel center">Our defined "approaches" that were used to help inform the tech design</p>
+                <a href="../images/messaging/approaches.png"><img class="workImage" src="../images/messaging/approach.png" alt="Screenshot of one of our approaches for the technical design" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Refinement & Feedback</h2>
+                <p>With the backend figured out, we were now able to narrow down some of the more minute details of the interactions and behaviors of the customer-facing experience. Over the course of many collaborative discussions involving BSAs, technical leads, and product partners, we were able to determine specifics such as message character limits, conversation states and statuses, retention limits, and more. And when we arrived at a place where we all felt comfortable moving forward, it was time to finally test the solution with users.</p>
+                <p>Working with the researchers on my design team, we developed a rapid usability study using UserTesting.com to help understand where users may run into pain points with the experience. I created a highly interactive prototype of the interface, and helped narrow down the question set to the areas we wished to focus on. We launched the test immediately after returning from our holiday break, and upon listening to the results, we found that our only major area of concern was around the "archive" functionality. What we learned was that users interpreted the word "archive" differently from how we were presenting it, hoping that it would save their messages for later rather than as a way of removing messages and organizing their main inbox. To mitigate this, we regrouped as a team and quickly pivoted to a secondary concept of "hiding" message conversations, which allowed for the same functionality as archiving without the confusion on what would occur when enacted. While the timing of the project didn't allow for a follow up test, the design team as well as our product partners felt confident in the clarity of this new direction.</p>
+                <p class="workLabel center">A look at the original interface with "Archive" functionality</p>
+                <a href="../images/messaging/before.png"><img class="workImage" src="../images/messaging/before.png" alt="Screenshot of the interface before feedback" /></a>
+                <p class="workLabel center">The redesigned interface with "Hide" functionality</p>
+                <a href="../images/messaging/after.png"><img class="workImage" src="../images/messaging/after.png" alt="Screenshot of the interface after feedback" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Final Wireframes & Specifications</h2>
+                <p>With the technical specifics determined and user feedback addressed, all that was left was to create the final deliverable and specifications for our development partners. Though I was primarily responsible for creating the wireframes and subsequent annotations, it was also my responsibility to help communicate my designs to the various stakeholders and teams impacted by this feature, including to our internal design leaders as well as various business SMEs and representatives. As the wireframes were finalized, I additionally helped coordinate and assist with the creation of our visual and content design deliverables, ensuring a consistent direction for both in alignment with my wireframes.</p>
+                <p class="workLabel center">A view of the final, annotated wireframes</p>
+                <a href="../images/messaging/spec.png"><img class="workImage" src="../images/messaging/spec.png" alt="Screenshot of part of the final annotated wireframe deliverable" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Status</h2>
+                <p>With In-App Messaging slated for a Q2 2025 launch, the entirety of our design deliverables were completed by the end of January. As of February 2025 I am no longer with Huntington, but the project was left in extremely capable hands. I'm eager to hear about the progress of this feature, and excited for reports on when it officially goes live!</p>
+            </div>
+        </section>
+
+        <div class="push altBackground"></div>
+
+    </div>
+
+    <footer>
+        <div class="foot-wrap">
+            <small>&copy; 2025 Kevin Mihalich. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
