@@ -36,6 +36,13 @@
     background-position: center;
 }
 
+#messaging{
+	background: url(images/messaging.jpg) no-repeat #27ae90;
+    background-size: cover;
+    box-shadow: none;
+    background-position: top;
+}
+
 #selectcheckout{
 	background:url(images/selectcheckout.jpg) no-repeat #27ae90;
 	background-size: cover;
