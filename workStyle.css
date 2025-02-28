@@ -43,6 +43,13 @@
     background-position: top;
 }
 
+#lobbyoverview{
+	background: url(images/lobbyoverview.jpg) no-repeat #27ae90;
+    background-size: cover;
+    box-shadow: none;
+    background-position: top;
+}
+
 #selectcheckout{
 	background:url(images/selectcheckout.jpg) no-repeat #27ae90;
 	background-size: cover;
