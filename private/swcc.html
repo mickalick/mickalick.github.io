@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46609022-1');
+    </script>
+    <meta charset="utf-8">
+    <title>Sherwin-Williams</title>
+    <link rel="stylesheet" href="../style.css?v=1">
+    <link rel="stylesheet" href="../workStyle.css?v=1">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('body').css('display', 'none');
+                $('body').fadeIn(750);
+
+                $('.link').click(function() {
+                    event.preventDefault();
+                    newLocation = this.href;
+
+                    $('body').fadeOut(1000, newpage);
+                });
+                function newpage() {
+                    window.location = newLocation;
+                }
+                // $("a").on('click', function(event) {
+                //     if (this.hash !== "") {
+                //         event.preventDefault();
+
+                //         var hash = this.hash;
+
+                //         $('html, body').animate({
+                //             scrollTop: $(hash).offset().top
+                //         }, 650, function(){
+                //             window.location.hash = hash;
+                //         });
+                //     }
+                // });
+                $(function() {
+                    var header = $("header");
+
+                    $(window).scroll(function() {    
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 50) {
+                            header.addClass("scrolled");
+                        } else {
+                            header.removeClass("scrolled");
+                        }
+                    }); 
+                });
+            });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body class="workPage">
+    <header>
+        <nav>
+            <a class="logo" href="home.html"></a>
+            <ul id="homeNav">
+                <li class="navItem"><a class="navLink" href="../private/hnb_lobby.html">Next</a></li>
+                <li class="navItem"><a class="navLink" href="../private/hnb_messaging.html">Previous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <section id="sherwin" class="workBanner main">
+        </section>
+
+        <section class="overview main">
+            <div class="flex_2col">
+                <div class="flex_2col_main">
+                    <h1>Sherwin-Williams Collision Core</h1>
+                    <p>From September 2019 to October 2020, I worked in a contractor role with Sherwin-Williams where I was fully dedicated to the conception and launch of a new suite of B2B applications supporting their automotive business customers.</p>
+                    <p>As a UX designer on the project, I assisted with user research efforts, contributed to product strategy and roadmaps, collaborated with external vendors, and lead front-end design efforts on multiple applications.</p>
+                    <p>Here's a look at some of what I accomplished.</p>
+                </div>
+                <div class="flex_2col_side">
+                    <h4>Project Timeframe</h4>
+                    <p>Sep 2019 - Oct 2020</p>
+                    <h4>Activities</h4>
+                    <ul>
+                        <li>Contextual Inquiry Research</li>
+                        <li>Journey Maps</li>
+                        <li>Proto-Personas</li>
+                        <li>Heuristic Evaluations & Expert Reviews</li>
+                        <li>Vendor UI Recommendations</li>
+                        <li>Application Design (Web & Mobile)</li>
+                        <li>Front-End Development</li>
+                        <li>Acceptance/Release Testing</li>
+                    </ul>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Axure</li>
+                        <li>Microsoft Excel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">More to be added soon...</h2>
+            </div>
+        </section>
+
+        <div class="altBackground">
+            <ul id="bottomNav">
+                <li class="bottomNavItem"><a class="navLink" href="../private/hnb_lobby.html">Next</a></li>
+                <li class="bottomNavItem"><a class="navLink" href="../private/hnb_messaging.html">Previous</a></li>
+            </ul>
+        </div>
+
+        <div class="push altBackground"></div>
+
+    </div>
+
+    <footer>
+        <div class="foot-wrap">
+            <small>&copy; 2025 Kevin Mihalich. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
