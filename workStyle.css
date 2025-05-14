@@ -29,6 +29,13 @@
     background-position: center;
 }
 
+#sherwincc{
+	background: url(images/swcc_banner.jpg) no-repeat #27ae90;
+    background-size: cover;
+    box-shadow: none;
+    background-position: top;
+}
+
 #huntington{
 	background: url(images/hnb_banner.jpg) no-repeat #27ae90;
     background-size: cover;
