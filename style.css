@@ -116,8 +116,13 @@ header{
 	transform: translateY(-3px);
 }
 
-#homeNav, #bottomNav{
+#homeNav{
 	list-style:none outside none;
+}
+
+#bottomNav{
+	list-style:none outside none;
+	padding-left: 0;
 }
 
 .navItem{
