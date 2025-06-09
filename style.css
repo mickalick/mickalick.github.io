@@ -196,11 +196,11 @@ footer{
     display: inline-block;
     text-align: center;
     color: #fff!important;
-    padding: 25px 50px;
+    padding: 20px 50px;
     font-size: 21px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin: 15px 0;
 }
 
 .about-button:hover {
@@ -391,6 +391,10 @@ nav {
 	.main{
 		margin: 60px 50px !important;
 	}
+
+	.grid-content {
+		padding: 15px 0 !important;
+	}
 }
 
 @media screen and (max-width:1024px){
@@ -457,6 +461,26 @@ nav {
 
 	.grid-item {
 		width: auto !important;
+		margin-bottom: 30px !important;
+	}
+
+	.grid-item a {
+		flex-direction: column-reverse !important;
+	}
+
+	.grid-content {
+		width: 100% !important;
+		margin-right: 0 !important;
+		padding: 0 !important;
+		margin-top: 20px;
+	}
+
+	.grid-img {
+		width: 100% !important;
+	}
+
+	.grid-wrapper h4, .grid-content, .grid-content h5 {
+		text-align: center !important;
 	}
 }
 
@@ -588,14 +612,39 @@ figure:hover, figure a:hover{
 }
 
 .grid-item {
+	width: 100%;
 	margin-bottom: 50px;
-	width: 47%;
 	list-style-type: none;
 }
 
-.grid-item:hover, .grid-item a:hover {
-	transform: translateY(-3px);
-	text-decoration: none !important;
+.grid-item a {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.grid-content {
+	width: 47%;
+	margin-right: 6%;
+	padding: 50px 0;
+}
+
+.grid-item h2 {
+	color: #444;
+	font-weight: 400;
+	margin-bottom: 4px;
+}
+
+.grid-item h2 em {
+	color: #444;
+}
+
+.grid-item:hover h2 em {
+	color: #7f4c8c;
+}
+
+.grid-item p {
+	font-size: 20px;
 }
 
 .grid-item h4 {
@@ -608,14 +657,14 @@ figure:hover, figure a:hover{
 
 .grid-item h5 {
 	font-size: 14px;
-	text-align: center;
+	text-align: left;
 	color: #444;
 	font-weight: 400;
 	margin-bottom: 12px;
 }
 
 .grid-img {
-	display: flex;
+	width: 47%;
 	position: relative;
 	overflow: hidden;
 	border-radius: 4px;
@@ -629,4 +678,38 @@ figure:hover, figure a:hover{
 
 .test {
 	display: none;
+}
+
+.workLinks {
+	margin: 20px 0;
+}
+
+.workLinks h3 {
+	color: #444;
+	font-weight: 400;
+}
+
+.workLinks h3 em {
+	color: #444;
+}
+
+.workLinks h3:hover em {
+	color: #7f4c8c;
+}
+
+
+.workLinks h4 {
+	color: #444;
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+
+.workLinks a:hover {
+	text-decoration: none !important;
+	color: #7f4c8c !important;
+}
+
+.grid-item:hover, .grid-item a:hover {
+	text-decoration: none !important;
+	transform: translateY(-1px);
 }
