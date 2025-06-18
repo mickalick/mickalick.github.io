@@ -161,14 +161,23 @@ header{
 }
 
 footer{
-	margin-top: -70px;
-	padding: 20px 0; 
-	color:#fff;
+	margin-top: -100px;
+	padding: 20px 0;
+	text-align: center;
+}
+
+footer p {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	line-height: 1.2;
 }
 
 .foot-wrap{
 	margin:0 auto;
-	width:250px;
+	width:84%;
 }
 
 .contact-button {
@@ -260,7 +269,7 @@ footer{
 .about-content p {
 	color: white;
 	font-weight: 300;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 
 .about-content h2 {
@@ -428,6 +437,11 @@ nav {
 	#about {
 		background-position-x: -400px !important;
 	}
+
+	#contact div {
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width:768px){
@@ -481,6 +495,10 @@ nav {
 
 	.grid-wrapper h4, .grid-content, .grid-content h5 {
 		text-align: center !important;
+	}
+
+	footer {
+		margin-top: -120px !important;
 	}
 }
 
@@ -573,6 +591,10 @@ nav {
 
 	#intro{
 		margin-bottom: 80px !important;
+	}
+
+	footer {
+		margin-top: -140px !important;
 	}
 }
 
