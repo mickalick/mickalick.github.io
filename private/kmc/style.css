@@ -179,7 +179,7 @@ footer p {
 
 .foot-wrap{
 	margin:0 auto;
-	width:84%;
+	width:95%;
 }
 
 .contact-button {
@@ -193,7 +193,6 @@ footer p {
   font-size: 21px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 20px 0;
   float: right;
 }
 
@@ -263,9 +262,7 @@ footer p {
 }
 
 .about-content{
-	float: right;
 	padding: 45px;
-	max-width: 55%;
 	background-color: #222;
 	border-radius: 5px;
 }
@@ -333,7 +330,7 @@ footer p {
 #introSpacer {
 	display: block;
 	position: relative;
-	top: 40%;
+	top: 30%;
 }
 
 .vidWrapper {
@@ -846,10 +843,8 @@ input[type=submit]:hover {
 
 .contactForm {
 	display: block;
-	width: 85%;
+	width: 60%;
 	margin: 0 auto;
-	margin-top: 60px;
-	margin-bottom: 40px;
 }
 
 .contactForm label {
@@ -863,23 +858,32 @@ input[type=submit]:hover {
 }
 
 .teamPhoto {
-	margin: 20px;
+	width: 60%;
+	margin-right: 20px;
 }
 
 .teamPhoto img {
 	width: 100%;
-	border-radius: 200px;
-	di
+	border-radius: 24px;
 }
 
 .teamCard {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 15px;
+	padding: 20px;
 	margin: 20px 0;
 	background: rgba(255, 255, 255, 0.05);
 	border-radius: 12px;
+}
+
+.teamCard a {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.teamCardContent {
+
 }
 
 .teamCard h4 {
@@ -902,4 +906,35 @@ input[type=submit]:hover {
 
 #social {
 	display: inline-block;
+	margin-right: 20px;
 }
+
+#contactArea {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 60px 0;
+}
+
+#contactInfo {
+	width: 30%;
+  background: rgba(255,255,255, 0.35);
+  margin: 0px 20px 0 0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px #222 solid;
+}
+
+#contactArea p, #contactArea h3 {
+	color: #222;
+}
+
+#contactArea p {
+	margin-top: 10px;
+}
+
+.contactForm h3 {
+	margin-bottom: 20px;
+}
+
+	color: #222 !important;
