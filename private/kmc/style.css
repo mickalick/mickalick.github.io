@@ -1,8 +1,10 @@
 * {
-	margin:0;
-	transition:all 250ms ease;
-	-webkit-transition:all 250ms ease;
-	-moz-transition:all 250ms ease;
+	margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all 250ms ease;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
 }
 
 html {
@@ -564,6 +566,24 @@ nav {
 	footer {
 		margin-top: -120px !important;
 	}
+
+	.teamCard {
+		flex-direction: column !important;
+	}
+
+	.teamPhoto {
+		width: 100% !important;
+		margin: 0 auto;
+	}
+
+	#contactArea {
+		flex-direction: column !important;
+	}
+
+	#contactInfo {
+		width: 100% !important;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width:625px){
@@ -614,7 +634,7 @@ nav {
     	line-height: 25px;
     }
 
-    .about-button{
+  .about-button{
 		padding:20px 45px;
 	}
 
@@ -770,6 +790,8 @@ figure:hover, figure a:hover{
 
 .grid-img img {
 	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
 .test {
@@ -918,23 +940,23 @@ input[type=submit]:hover {
 
 #contactInfo {
 	width: 30%;
-  background: rgba(255,255,255, 0.35);
+  background: rgba(2,2,2, 0.75);
   margin: 0px 20px 0 0;
   padding: 20px;
   border-radius: 10px;
   border: 2px #222 solid;
 }
 
-#contactArea p, #contactArea h3 {
-	color: #222;
+#contactInfo h3 {
+	color: #BD97CE;
 }
 
 #contactArea p {
+	color: #FCFCFC;
 	margin-top: 10px;
 }
 
 .contactForm h3 {
+	color: #222;
 	margin-bottom: 20px;
 }
-
-	color: #222 !important;
