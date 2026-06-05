@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46609022-1');
+    </script>
+    <meta charset="utf-8">
+    <title>SelectCheckout</title>
+    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="stylesheet" href="workStyle.css?v=1">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('body').css('display', 'none');
+                $('body').fadeIn(750);
+
+                $('.link').click(function() {
+                    event.preventDefault();
+                    newLocation = this.href;
+
+                    $('body').fadeOut(1000, newpage);
+                });
+                function newpage() {
+                    window.location = newLocation;
+                }
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 650, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+                $(function() {
+                    var header = $("header");
+
+                    $(window).scroll(function() {    
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 50) {
+                            header.addClass("scrolled");
+                        } else {
+                            header.removeClass("scrolled");
+                        }
+                    }); 
+                });
+            });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body class="workPage">
+    <header>
+        <nav>
+            <a class="logo" href="/"></a>
+            <ul id="homeNav">
+                <li class="navItem"><a class="navLink" href="ads_pwr.html">Next</a></li>
+                <li class="navItem"><a class="navLink" href="private/granular.html">Previous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <section id="selectcheckout" class="workBanner main">
+        </section>
+
+        <section class="overview main">
+            <div class="flex_2col">
+                <div class="flex_2col_main">
+                    <h1>Alliance Data SelectCheckout<sup>SM</sup></h1>
+                    <h3>UX Design Case Study</h3>
+                    <p>SelectCheckout<sup>SM</sup> is a capability offered by Alliance Data to help improve the online shopping experience for our brands and their customers alike. As the UX lead for this project, I was responsible for designing the end-to-end experience for this new online payment service. Here's the story.</p>
+                </div>
+                <div class="flex_2col_side">
+                    <h4>Company</h4>
+                    <p>Alliance Data Card Services</p>
+                    <h4>Project Timeframe</h4>
+                    <p>Dec 2016 - Oct 2017</p>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                        <li>UX Project Lead</li>
+                        <li>Competitive Research</li>
+                        <li>Wireframing</li>
+                        <li>High Fidelity Design</li>
+                        <li>Prototyping</li>
+                        <li>User Testing</li>
+                        <li>Specification Document x4</li>
+                    </ul>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Axure</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">The Challenge</h2>
+                <p>The Mobile app team took initiative and developed an application with baseline functionality as a proof of concept for SelectCheckout. Though the app was a good starting point, it was missing vital features such as rewards integration, profile registration, and "remember me" functionality. It was also developed without any input from the UX team. My job was to refine the experience of the current state while also designing the features to be added in the future.</p>
+                <p class="workLabel center">SelectCheckout Proof of Concept</p>
+                <a href="images/selectCheckout/old.png"><img class="workImage" src="images/selectCheckout/old.png" alt="SC 1" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">User Flows</h2>
+                <p>Following competitve market research, I created scenario flows for all of the possible steps and actions a user needs to take to reset their password. These also included scenarios for the "Out of Band" process (i.e. user needs to confirm their identity due to a new sign-in device), as the two processes have a lot of overlap.</p>
+                <p class="workLabel center">Password Reset Flows</p>
+                <a href="images/passwordReset/passwordResetFlow.png"><img class="workImage" src="images/passwordReset/passwordResetFlow.png" alt="PWR 3" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Early Engagement Wireframes & Mockups</h2>
+                <p>The project work was split into separate "bundles", as the development estimates for each feature were large enough to be considered their own separate projects. Fortunately I started working on the design work for each feature six months before any development was scheduled to start. After competitive analysis and brainstorming solutions, I created low-fidelity mockups to be used in the business case proposals for each feature.</p>
+                <p class="workLabel center">Early Mockups Created for Business Proposal</p>
+                <a href="images/selectCheckout/bundle1.jpg"><img class="workImage" src="images/selectCheckout/bundle1.jpg" alt="SC 2" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">UI Redesign</h2>
+                <p>With a better idea of the future state, I began working on redesigning the user interface of the application. I aimed to bring the look and feel of the experience closer to our established Account Center conventions, as the two capabilities use the same account credentials. I also created more opportunities for branding & marketing messaging.</p>
+                <p class="workLabel center">Redesign 1.0</p>
+                <a href="images/selectCheckout/redesign1.png"><img class="workImage" src="images/selectCheckout/redesign1.png" alt="SC 3" /></a>
+                <p class="workLabel center">Redesign 2.0</p>
+                <a href="images/selectCheckout/redesign2.png"><img class="workImage" src="images/selectCheckout/redesign2.png" alt="SC 4" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Prototyping & Usability Testing</h2>
+                <p>I prototyped and tested each new feature on its own to ensure we were meeting user's expectations. After ironing out some minor issues, it was time to test the entire experience from end to end. Due to the significance of this testing, we recruited help from the firm Lextant to conduct a large scale usability study. For this, I created a funtioning faux shopping website with the SelectCheckout integrated into it. The site was tested on both desktop and mobile platforms over 12 separate sessions, all conducted in Lextant's offsite usability lab.</p>
+                <p class="workLabel center">Prototype created for Lextant Study</p>
+                <a href="images/selectCheckout/prototype.png"><img class="workImage" src="images/selectCheckout/prototype.png" alt="SC 5" /></a>
+                <p class="workLabel center">Executive Summary from Lextant Research (named "Simple Checkout" at the time)</p>
+                <a href="images/selectCheckout/lextant.png"><img class="workImage" src="images/selectCheckout/lextant.png" alt="SC 6" /></a>
+            </div>
+        </section>
+
+        <section class="workItem">
+            <div class="main">
+                <h2 align="center">Documentation</h2>
+                <p>With testing complete, all that was left to do was document and develop it. I created a total of four specification documents, one for each new feature and one for the updated front-end design. I continued to support the project through handoff to the agile development team, making needed UX updates based on dev findings.</p>
+                <p class="workLabel center">A preview of the specification document delivered to the development team</p>
+                <a href="images/selectCheckout/specs.png" target="_blank"><img class="workImage" src="images/selectCheckout/specs.png" alt="SC 7" /></a>
+            </div>
+        </section>
+
+        <section class="workItem altBackground">
+            <div class="main">
+                <h2 align="center">Launch</h2>
+                <p>SelectCheckout<sup>SM</sup> went live on the <a href="https://www.boscovs.com/" target="_blank">Boscovs website</a> on September 7, 2018. After one month SelectCheckout transactions accounted for nearly $450,000 in online sales, leading to an 8% increase in total online sales from the previous month.</p>
+            </div>
+        </section>
+
+        <div class="push altBackground"></div>
+
+    </div>
+
+    <footer>
+        <div class="foot-wrap altBackground">
+            <small>&copy; 2020 Kevin Mihalich. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
