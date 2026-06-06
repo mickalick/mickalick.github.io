@@ -178,6 +178,7 @@ footer a{
 	background: #222;
   	border-radius: 9px;
   	padding: 20px;
+  	height: fit-content;
 }
 
 .flex_2col_side ul {
