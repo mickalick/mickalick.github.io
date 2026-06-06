@@ -17,7 +17,8 @@ body {
 	margin:0;
 	padding:0;
 	text-align:left;
-	font-family: 'Barlow', sans-serif;
+	font-family: 'Outfit', sans-serif;
+	font-optical-sizing: auto;
 	background-color: #333;
 }
 
@@ -163,7 +164,6 @@ header{
 }
 
 footer {
-	margin-top: -18%;
 	padding: 20px 0;
 }
 
@@ -174,7 +174,7 @@ footer p {
 	margin: 0;
 	margin-left: 20px;
 	padding: 0;
-	color: #222;
+	color: #FCFCFC;
 	line-height: 1.2;
 	text-align: left;
 }
@@ -403,7 +403,7 @@ footer p {
 }
 
 .icon{
-	background: url(images/social_dark.png) no-repeat;
+	background: url(images/social.png) no-repeat;
 	margin:5px 20px 0px;
 	display: inline-block;
 	box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 10px 20px rgba(0,0,0,0.05);
@@ -563,10 +563,6 @@ nav {
 		text-align: center !important;
 	}
 
-	footer {
-		margin-top: -120px !important;
-	}
-
 	.teamCard {
 		flex-direction: column !important;
 	}
@@ -621,10 +617,6 @@ nav {
 		margin: 0 16px !important;
 	}
 
-	.icon{
-	margin: 5px 15px 30px;
-	}
-
 	.main{
 		margin: 80px 30px 70px !important;
 	}
@@ -677,9 +669,6 @@ nav {
 		margin-bottom: 80px !important;
 	}
 
-	footer {
-		margin-top: -140px !important;
-	}
 }
 
 
@@ -940,7 +929,7 @@ input[type=submit]:hover {
 #contactInfo {
 	width: 30%;
   background: rgba(2,2,2, 0.75);
-  margin: 0px 20px 0 0;
+  margin: 0px 20px 20px 0;
   padding: 20px;
   border-radius: 10px;
   border: 2px #222 solid;
