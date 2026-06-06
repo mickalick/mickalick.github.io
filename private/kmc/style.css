@@ -163,7 +163,7 @@ header{
 }
 
 footer {
-	margin-top: -100px;
+	margin-top: -18%;
 	padding: 20px 0;
 }
 
@@ -403,7 +403,7 @@ footer p {
 }
 
 .icon{
-	background: url(images/social.png) no-repeat;
+	background: url(images/social_dark.png) no-repeat;
 	margin:5px 20px 0px;
 	display: inline-block;
 	box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 10px 20px rgba(0,0,0,0.05);
@@ -520,7 +520,7 @@ nav {
 		max-width: 100%;
 	}
 
-	.main h1, .main h2, .main h3 {
+	.main h1, .main h2, .main h3, .main h4 {
 		text-align: center;
 	}
 
@@ -887,16 +887,14 @@ input[type=submit]:hover {
 .teamPhoto img {
 	width: 100%;
 	border-radius: 24px;
+	border: 5px solid #BD97CE;
 }
 
 .teamCard {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 20px;
-	margin: 20px 0;
-	background: rgba(255, 255, 255, 0.05);
-	border-radius: 12px;
+	margin: 40px 0;
 }
 
 .teamCard a {
@@ -914,6 +912,7 @@ input[type=submit]:hover {
 	padding:0;
 	margin:5px 0;
 	color: #FCFCFC;
+	text-align: left;
 }
 
 .teamCard .sub {
@@ -927,8 +926,8 @@ input[type=submit]:hover {
 }
 
 #social {
-	display: inline-block;
 	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 #contactArea {
@@ -959,4 +958,34 @@ input[type=submit]:hover {
 .contactForm h3 {
 	color: #222;
 	margin-bottom: 20px;
+}
+
+.about-content h3 {
+	color: #BD97CE;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.about-content h4 {
+	color: #FCFCFC;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background: currentColor;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+.tagline {
+	font-size: 40px;
+}
+
+.static-part {
+	
 }

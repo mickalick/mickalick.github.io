@@ -12,7 +12,7 @@
 		</script>
 
 		<meta charset="utf-8">
-		<title>KM Creative | Design Services</title>
+		<title>KM Makes | Design Services</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="shortcut icon" href="images/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Barlow:200,400,600,700&display=swap" rel="stylesheet">
@@ -79,8 +79,41 @@
 						<div class="main">
 							<div id="introSpacer">
 								<img id="heroLogo" src="images/newLogo.png">
-								<em><h1 class="hero">Welcome to KM Creative</h1></em>
-								<h2 id="myWork">We're a small design team obsessed with solving big problems.</h2>
+								<p class="tagline"><em><span class="static-part">KM Makes </span></em><span id="rotating-word" class="rotating-word"></span><span id="cursor" class="cursor">
+								
+								<script>
+									const words = ["experiences that matter.", "your brand shine.", "products that don't suck.", "a lot of cool things, actually."];
+
+									const el = document.getElementById('rotating-word');
+									const cursor = document.getElementById('cursor');
+
+									let wordIndex = 0;
+									let charIndex = 0;
+									let isDeleting = false;
+
+									function tick() {
+									  const current = words[wordIndex];
+									  isDeleting ? charIndex-- : charIndex++;
+									  el.textContent = current.slice(0, charIndex);
+
+									  let delay = isDeleting ? 25 : 45; // delete faster than type
+
+									  if (!isDeleting && charIndex === current.length) {
+									    delay = 1600;       // pause at the end
+									    isDeleting = true;
+									  } else if (isDeleting && charIndex === 0) {
+									    isDeleting = false;
+									    wordIndex = (wordIndex + 1) % words.length; // next word, looping
+									    delay = 300;
+									  } else {
+									    cursor.style.animationPlayState = 'paused';
+									    cursor.style.opacity = '1';
+									  }
+
+									  setTimeout(tick, delay);
+									}
+									tick();
+								</script>
 							</div>
 						</div>
 					</div>
@@ -187,6 +220,19 @@
 						<h4><em>Featured Work</em></h4>
 						<ul class="grid">
 							<li class="grid-item">
+								<a href="gehc.html">
+									<div class="grid-content">
+										<h3><em>GE Healthcare:</em></h3>
+										<h2>Optimizing the radiation oncology workflow to improve clinic efficiency and patient outcomes.</h2>
+										<p>Product Design, Market Research</p>
+										<h5>2025 - 2026</h5>
+									</div>
+									<div class="grid-img">
+										<img src="images/tile_gehc.jpg">
+									</div>
+								</a>
+							</li>
+							<li class="grid-item">
 								<a href="huntington.html">
 									<div class="grid-content">
 										<h3><em>Huntington National Bank:</em></h3>
@@ -252,13 +298,13 @@
 				<div class="main">
 					<div class="about-content">
 						<h1>About Us</h1>
-						<h2>KM Creative exists for one reason: to help <em>humans</em> serve other <em>humans</em> better.</h2>
-						<p>No matter the size of your organization (or lack thereof), we know there can be constant questions in your mind about how you can realistically deliver value to your audience. You may have an endless list of goals and outcomes you want to drive towards, but the path getting there isn't clear.</p>
-						<p>That's where we come in. KM Creative is a full spectrum design consultant service, helping organizations, from as small as one person to large-scale corporations, realize the potential of their products through a human-centered approach.</p>
-						<h3>Services & Pricing</h3>
+						<h2>KM Makes exists for one reason: to help <em>humans</em> serve other <em>humans</em> better.</h2>
+						<p>No matter the size or goals of your organization (or lack thereof), there can be endless questions in your mind about how you can best deliver value to both you and your audience, and what paths you can take to get there.</p>
+						<p>That's where we come in. KM Makes is a full spectrum design consultant service, helping organizations from as small as one person to large-scale corporations realize the potential of their products through a human-centered approach.</p>
+						<h4>Services & Pricing</h4>
 						<p>Our services range from high-level product strategy, all the way to delivering research-backed, developer hand-off ready mockups and prototypes. We meet you wherever you're at in your lifecycle, understand your goals and motivations, and go from there.</p>
 						<p>The first hour is always <em>free</em>, with options after ranging from hourly to project-based pricing.</p>
-						<h3>The Team</h3>
+						<h3>Meet The Team</h3>
 						<div id="teamCards">
 							<div class="teamCard">
 								<div class="teamPhoto center">
@@ -267,7 +313,7 @@
 								<div class="teamCardContent">
 									<h4>Kevin Mihalich</h4>
 									<h4 class="sub">Owner & Founder</h4>
-									<p>Based out of Cleveland Heights, OH, Kevin has over 12 years of design experience spanning various industries and environments.</p>
+									<p>Based out of Cleveland Heights, OH, Kevin has over 12 years of experience leading digital design efforts for teams across various industries and environments.</p>
 									<a href="work/kmihalich_resume.pdf"><h5>Resume</h5></a>
 									<a href="https://www.linkedin.com/in/kevinmihalich"><h5>LinkedIn</h5></a>
 								</div>
@@ -283,11 +329,11 @@
 					<div id="contactArea">
 						<div id="contactInfo">
 							<h3>Email:</h3>
-							<p>hello@kmcreative.com</p>
+							<p>hello@kmmakes.com</p>
 							<h3>Call:</h3>
-							<p>216-555-5741</p>
+							<p>Coming Soon</p>
 							<h3>Visit:</h3>
-							<p>123 Lee Rd<br/>Cleveland Heights, OH, 44118</p>
+							<p>Coming Soon</p>
 						</div>
 
 						<div class="contactForm">
@@ -295,13 +341,13 @@
 	  						<form action="action_page.php">
 
 	    					<label for="name">Name (first or full):</label>
-	    					<input type="text" id="name" name="name" placeholder="Your name..">
+	    					<input type="text" id="name" name="name" placeholder="Your name...">
 
-							<label for="org">Organization (if applicable):</label>
-	    					<input type="text" id="org" name="org" placeholder="Your organization..">
+	    					<label for="email">Email:</label>
+	    					<input type="text" id="email" name="email" placeholder="Your email address...">
 
 	    					<label for="subject">How we can help:</label>
-	    					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	    					<textarea id="subject" name="subject" placeholder="Tell us what's going on..." style="height:200px"></textarea>
 
 	    					<input type="submit" class="contact-button" value="Send">
 
@@ -316,7 +362,7 @@
 						<a id="linkedin" class="icon" aria-label="LinkedIn" href="https://www.linkedin.com/in/kevinmihalich" target="_blank"></a>
 						<a id="instagram" class="icon" aria-label="Instagram" href="https://www.instagram.com/kmickalick/" target="_blank"></a>
 					</div>
-					<p><small>&copy; 2026 KM Creative.<br>This site was designed and built by us.<br>All rights reserved.</small></p>
+					<p><small>&copy; 2026 KM Makes LLC.<br>This site was designed and built by us.<br>All rights reserved.</small></p>
 				</div>
 			</footer>
 		</div>
