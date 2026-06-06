@@ -8,72 +8,72 @@
 }
 
 #nationwide{
-	background:url(images/nationwide.jpg) no-repeat #27ae90;
+	background:url(images/nationwide.jpg) no-repeat #BD97CE;
 	background-size: cover;
 }
 
 #mva{
-	background:url(images/mva.jpg) no-repeat #27ae90;
+	background:url(images/mva.jpg) no-repeat #BD97CE;
 	background-size: cover;
 }
 
 #lean{
-	background:url(images/lean.png) no-repeat #27ae90;
+	background:url(images/lean.png) no-repeat #BD97CE;
 	background-size: cover;
 }
 
 #sherwin{
-	background: url(images/sw_banner.jpg) no-repeat #27ae90;
+	background: url(images/sw_banner.jpg) no-repeat #BD97CE;
     background-size: cover;
     box-shadow: none;
     background-position: center;
 }
 
 #sherwincc{
-	background: url(images/swcc_banner.jpg) no-repeat #27ae90;
+	background: url(images/swcc_banner.jpg) no-repeat #BD97CE;
     background-size: cover;
     box-shadow: none;
     background-position: top;
 }
 
 #huntington{
-	background: url(images/hnb_banner.jpg) no-repeat #27ae90;
+	background: url(images/hnb_banner.jpg) no-repeat #BD97CE;
     background-size: cover;
     box-shadow: none;
     background-position: center;
 }
 
 #messaging{
-	background: url(images/messaging.jpg) no-repeat #27ae90;
+	background: url(images/messaging.jpg) no-repeat #BD97CE;
     background-size: cover;
     box-shadow: none;
     background-position: top;
 }
 
 #lobbyoverview{
-	background: url(images/lobbyoverview.jpg) no-repeat #27ae90;
+	background: url(images/lobbyoverview.jpg) no-repeat #BD97CE;
     background-size: cover;
     box-shadow: none;
     background-position: top;
 }
 
 #selectcheckout{
-	background:url(images/selectcheckout.jpg) no-repeat #27ae90;
+	background:url(images/selectcheckout.jpg) no-repeat #BD97CE;
 	background-size: cover;
 }
 
 #passwordreset{
-	background:url(images/passwordreset.jpg) no-repeat #FCFCFC;
+	background:url(images/passwordreset.jpg) no-repeat #BD97CE;
 	background-size: cover;
 }
 
 #promoplans{
-	background:url(images/promoplans.jpg) no-repeat #FCFCFC;
+	background:url(images/promoplans.jpg) no-repeat #BD97CE;
 	background-size: cover;
 }
 
 #granular{
-	background:url(images/granular.jpg) no-repeat #FCFCFC;
+	background:url(images/granular.jpg) no-repeat #BD97CE;
 	background-size: cover;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .workPage footer{
-	color:#444;
+	color:#FCFCFC;
 	text-align: center;
 }
 
@@ -120,10 +120,11 @@ footer a{
 	margin-top: 60px;
 	font-size: 36px;
 	font-weight: 600;
+	color: #BD97CE;
 }
 
 .altBackground{
-	background-color: #F2F2F2;
+	background-color: #292929;
 }
 
 .workImage{
@@ -162,21 +163,27 @@ footer a{
 }
 
 .flex_2col_main h1 {
-	color: #7f4c8c;
+	color: #BD97CE;
 }
 
+.flex_2col_main h2 {
+	color: #FCFCFC;
+}
 
 .flex_2col_side {
 	width: 30%;
 	max-width: 300px;
 	margin-top: 20px;
+	background: #222;
+  	border-radius: 9px;
+  	padding: 20px;
 }
 
 .flex_2col_side ul {
 	list-style: none outside none;
 	margin: 5px 0 25px;
 	padding-left: 0;
-	color: #444;
+	color: #FCFCFC;
 }
 
 .flex_2col_side p {
@@ -187,6 +194,7 @@ footer a{
 
 .flex_2col h4 {
 	text-transform: uppercase;
+	color: #BD97CE;
 }
 
 .flex_2col_half {
