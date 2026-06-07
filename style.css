@@ -67,7 +67,7 @@ h3 a{
 
 p{
 	font-size:21px;
-	line-height:1.6;
+	line-height:1.4;
 	margin:20px 0;
 	color:#FCFCFC;
 }
@@ -248,10 +248,9 @@ footer p {
 }
 
 #about {
-	background:url(images/me_2024_bw.jpeg) no-repeat center;
-	box-shadow: inset 0 0 0 1000px rgba(252,252,252,.1);
-	/*background-attachment: fixed;*/
-	background-size: cover;
+	background:url(images/bg_tile2.png) repeat;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+	background-attachment: fixed;
 }
 
 #about-image{
@@ -497,10 +496,6 @@ nav {
 		margin: 70px 50px !important;
 	}
 
-	#about {
-		background-position-x: -400px !important;
-	}
-
 	#contact div {
 		width: 100%;
 	}
@@ -508,9 +503,6 @@ nav {
 }
 
 @media screen and (max-width:768px){
-	#about {
-		background-position-x: center !important;
-	}
 
 	.about-content{
 		float: none;
@@ -527,7 +519,6 @@ nav {
 	}
 
 	.grid-wrapper{
-		max-width: 500px !important;
 		margin: 0 auto;
 	}
 
@@ -565,7 +556,6 @@ nav {
 	}
 
 	.teamPhoto {
-		width: 100% !important;
 		margin: 0 auto;
 	}
 
@@ -866,7 +856,7 @@ input[type=submit]:hover {
 }
 
 .teamPhoto {
-	width: 60%;
+	width: 100%;
 	margin-right: 20px;
 }
 
@@ -951,6 +941,7 @@ input[type=submit]:hover {
 	color: #BD97CE;
 	font-size: 32px;
 	font-weight: 700;
+	margin-top: 40px;
 }
 
 .about-content h4 {
@@ -976,4 +967,10 @@ input[type=submit]:hover {
 
 .static-part {
 	
+}
+
+#footLogo {
+	float: left;
+	width: 10%;
+	margin: 20px 40px;
 }
