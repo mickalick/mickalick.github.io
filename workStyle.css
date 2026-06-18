@@ -1,9 +1,32 @@
+.topMessage {
+	overflow:hidden;
+	transition:none;
+	padding: 16px 24px;
+	border-radius: 9px;
+}
+
+.first {
+	margin-top: 200px !important;
+}
+
+.topMessage p {
+	color: #222;
+}
+
+.topMessage em {
+	color: #222;
+	font-weight: 700;
+}
+
+#previousWork {
+	background-color: #FFC943;
+}
+
 .workBanner{
 	color: #FFF;
 	overflow:hidden;
 	transition:none;
 	height:350px;
-	margin-top: 200px !important;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 	border-radius: 15px;
 }
