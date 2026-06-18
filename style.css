@@ -583,11 +583,11 @@ nav {
 		text-align: center;
 	}
 
-	#contactForm {
+	.contactForm {
 		width: 100% !important;
 	}
 
-	#contactForm h3 {
+	.contactForm h3 {
 		text-align: left;
 	}
 }
