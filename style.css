@@ -413,6 +413,22 @@ footer p {
 	text-decoration: underline;
 }
 
+
+.iconNew {
+	display: inline-block;
+	width: 24px;
+  height: 24px;
+}
+
+#insta {
+	background-color: #BD97CE;
+	-webkit-mask-image: url('images/svgs/insta.svg');
+  mask-image: url('images/svgs/insta.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+
 .icon{
 	background: url(images/social.png) no-repeat;
 	margin:5px 20px 0px;
