@@ -413,10 +413,14 @@ footer p {
 	text-decoration: underline;
 }
 
-.social a {
-	margin: 0 20px;
+#social {
+	margin: 20px;
+	margin-top: 0;
 }
 
+#social a {
+	margin: 0 20px;
+}
 
 .icon {
 	display: inline-block;
@@ -916,11 +920,6 @@ input[type=submit]:hover {
 .teamCard a h5 {
 	font-size: 20px;
 	font-weight: 400;
-}
-
-#social {
-	margin-right: 20px;
-	margin-bottom: 20px;
 }
 
 #contactArea {
