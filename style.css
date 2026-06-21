@@ -413,49 +413,27 @@ footer p {
 	text-decoration: underline;
 }
 
+.social a {
+	margin: 0 20px;
+}
 
-.iconNew {
+
+.icon {
 	display: inline-block;
-	width: 24px;
-  height: 24px;
+	width: 32px;
+  height: 32px;
 }
 
 #insta {
-	background-color: #BD97CE;
+	background-color: #FFF;
 	-webkit-mask-image: url('images/svgs/insta.svg');
   mask-image: url('images/svgs/insta.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
 
-
-.icon{
-	background: url(images/social.png) no-repeat;
-	margin:5px 20px 0px;
-	display: inline-block;
-	box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 10px 20px rgba(0,0,0,0.05);
-}
-
-.icon:hover{
-	transform: translateY(-2px);
-}
-
-#twitter {
-	width: 45px;
-	height: 45px;
-	background-position: -48px -2px;
-}
-
-#instagram {
-	width: 45px;
-	height: 45px;
-	background-position: -98px -2px;
-}
-
-#linkedin {
-	width: 45px;
-	height: 45px;
-	background-position: 0px -2px;
+#insta:hover {
+	background-color: #BD97CE;
 }
 
 .empty {
