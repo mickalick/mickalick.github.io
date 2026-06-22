@@ -170,7 +170,7 @@ footer {
 }
 
 #footLogo {
-	width: 10%;
+	width: 8%;
 	margin: 20px 40px;
 }
 
@@ -182,6 +182,7 @@ footer {
 .footImages {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 footer p {
