@@ -962,15 +962,10 @@ input[type=submit]:hover {
 	#about h2, #contact h2, #contactSuccess h2 {
 		font-size: 22px;
 	}
-}
 
-@media screen and (max-width:420px){
-	header {
-		padding: 40px 0 !important;
-	}
-
-	.navItem{
-		margin: 0 2px !important;
+	#footLogo {
+	  width: 15%;
+	  margin: 12px 32px;
 	}
 
 	#heroLogo { 
@@ -984,6 +979,16 @@ input[type=submit]:hover {
 	.tagline {
 	  font-size: 32px;
 	  line-height: 44px;
+	}
+}
+
+@media screen and (max-width:420px){
+	header {
+		padding: 40px 0 !important;
+	}
+
+	.navItem{
+		margin: 0 2px !important;
 	}
 
 	.contact-button, .about-button{
