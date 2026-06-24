@@ -436,7 +436,6 @@ footer p {
 	display: flex;
 	min-height: 85vh;
 	align-items: center;
-	background: rgba(0, 0, 0, 0.25);
 }
 
 .main{
