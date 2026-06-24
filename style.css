@@ -434,7 +434,7 @@ footer p {
 
 #contactSuccess {
 	display: flex;
-	min-height: 95vh;
+	min-height: 85vh;
 	align-items: center;
 	background: rgba(0, 0, 0, 0.25);
 }
